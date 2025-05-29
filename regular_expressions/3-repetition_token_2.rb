@@ -1,13 +1,2 @@
 #!/usr/bin/env ruby
-
-input = ARGV[0]
-matches = input.scan(/hb*t*n/)
-
-matches.each do |match|
-  if match == "hbn"
-    puts match
-  else
-    puts match.upcase
-  end
-end
-
+puts ARGV[0].scan(/hbt{1,5}n/).join
